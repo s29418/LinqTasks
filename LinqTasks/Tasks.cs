@@ -120,16 +120,16 @@ public static partial class Tasks
         {
             Ename = emp.Ename,
             Job = emp.Job,
-            Hiredate = emp.HireDate
+            HireDate = emp.HireDate
         });
 
         var additionalObject = new[] { new
         {
             Ename = "Brak wartości", 
             Job = (string)null, 
-            Hiredate = (DateTime?)null
+            HireDate = (DateTime?)null
         } };
-
+        
         return emps.Concat(additionalObject);
     }
 
