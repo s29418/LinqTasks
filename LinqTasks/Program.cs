@@ -78,6 +78,13 @@ class Program
             Console.WriteLine(o);
         }
         
+        Console.WriteLine("======= ZAD 12 =======");
+        IEnumerable<Emp> result12 = Tasks.Task12();
+        foreach (Emp emp in result12)
+        {
+            Console.WriteLine(emp);
+        }
+        
         
         
     }
