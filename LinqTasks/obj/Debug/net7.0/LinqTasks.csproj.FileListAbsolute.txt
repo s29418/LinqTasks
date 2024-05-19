@@ -1,0 +1,14 @@
+C:\Users\misio\RiderProjects\LinqTutorials\LinqTasks\bin\Debug\net7.0\LinqTasks.exe
+C:\Users\misio\RiderProjects\LinqTutorials\LinqTasks\bin\Debug\net7.0\LinqTasks.deps.json
+C:\Users\misio\RiderProjects\LinqTutorials\LinqTasks\bin\Debug\net7.0\LinqTasks.runtimeconfig.json
+C:\Users\misio\RiderProjects\LinqTutorials\LinqTasks\bin\Debug\net7.0\LinqTasks.dll
+C:\Users\misio\RiderProjects\LinqTutorials\LinqTasks\bin\Debug\net7.0\LinqTasks.pdb
+C:\Users\misio\RiderProjects\LinqTutorials\LinqTasks\obj\Debug\net7.0\LinqTasks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\misio\RiderProjects\LinqTutorials\LinqTasks\obj\Debug\net7.0\LinqTasks.AssemblyInfoInputs.cache
+C:\Users\misio\RiderProjects\LinqTutorials\LinqTasks\obj\Debug\net7.0\LinqTasks.AssemblyInfo.cs
+C:\Users\misio\RiderProjects\LinqTutorials\LinqTasks\obj\Debug\net7.0\LinqTasks.csproj.CoreCompileInputs.cache
+C:\Users\misio\RiderProjects\LinqTutorials\LinqTasks\obj\Debug\net7.0\LinqTasks.dll
+C:\Users\misio\RiderProjects\LinqTutorials\LinqTasks\obj\Debug\net7.0\refint\LinqTasks.dll
+C:\Users\misio\RiderProjects\LinqTutorials\LinqTasks\obj\Debug\net7.0\LinqTasks.pdb
+C:\Users\misio\RiderProjects\LinqTutorials\LinqTasks\obj\Debug\net7.0\LinqTasks.genruntimeconfig.cache
+C:\Users\misio\RiderProjects\LinqTutorials\LinqTasks\obj\Debug\net7.0\ref\LinqTasks.dll
