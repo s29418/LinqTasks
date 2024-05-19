@@ -55,6 +55,22 @@ class Program
             Console.WriteLine(o);
         }
         
+        Console.WriteLine("======= ZAD 8 =======");
+        bool result8 = Tasks.Task8();
+        Console.WriteLine(result8);
+        
+        
+        Console.WriteLine("======= ZAD 9 =======");
+        Emp result9 = Tasks.Task9();
+        Console.WriteLine(result9);
+        
+        Console.WriteLine("======= ZAD 10 =======");
+        IEnumerable<object> result10 = Tasks.Task10();
+        foreach (object o in result10)
+        {
+            Console.WriteLine(o);
+        }
+        
         
     }
 }

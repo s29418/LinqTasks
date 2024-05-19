@@ -55,7 +55,8 @@ public static partial class Tasks
     public static IEnumerable<object> Task5()
     {
         return Emps.Select(emp => new 
-            { Nazwisko = emp.Ename, 
+            { 
+                Nazwisko = emp.Ename, 
                 Praca = emp.Job 
             });
     }
@@ -67,8 +68,12 @@ public static partial class Tasks
     /// </summary>
     public static IEnumerable<object> Task6()
     {
-        return Emps.Join(Depts, emp => emp.Deptno, dept => dept.Deptno, (emp, dept) => new 
-            { emp.Ename, emp.Job, dept.Dname });
+        return Emps.Join(Depts, emp => emp.Deptno, dept => dept.Deptno, (emp, dept) => new
+        {
+            emp.Ename, 
+            emp.Job, 
+            dept.Dname
+        });
     }
 
     /// <summary>
@@ -77,7 +82,11 @@ public static partial class Tasks
     public static IEnumerable<object> Task7()
     {
         return Emps.GroupBy(emp => emp.Job)
-            .Select(group => new { Praca = group.Key, LiczbaPracownikow = group.Count() });
+            .Select(group => new
+            {
+                Praca = group.Key, 
+                LiczbaPracownikow = group.Count()
+            });
     }
 
     /// <summary>
@@ -86,7 +95,7 @@ public static partial class Tasks
     /// </summary>
     public static bool Task8()
     { 
-        return false;
+        return Emps.Any(emp => emp.Job == "Backend programmer");
     }
 
     /// <summary>
@@ -95,7 +104,9 @@ public static partial class Tasks
     /// </summary>
     public static Emp Task9()
     {
-        return null;
+        return Emps.Where(emp => emp.Job == "Frontend programmer")
+            .OrderByDescending(emp => emp.HireDate)
+            .FirstOrDefault();
     }
 
     /// <summary>
@@ -105,7 +116,16 @@ public static partial class Tasks
     /// </summary>
     public static IEnumerable<object> Task10()
     {
-        return null;
+        var emps = Emps.Select(emp => new
+        {
+            Ename = emp.Ename,
+            Job = emp.Job,
+            Hiredate = emp.HireDate
+        });
+
+        var additionalObject = new[] { new { Ename = "Brak wartości", Job = (string)null, Hiredate = (DateTime?)null } };
+
+        return emps.Concat(additionalObject);
     }
 
     /// <summary>

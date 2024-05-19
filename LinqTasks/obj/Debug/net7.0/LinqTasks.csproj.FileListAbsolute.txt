@@ -12,3 +12,4 @@ C:\Users\misio\RiderProjects\LinqTutorials\LinqTasks\obj\Debug\net7.0\refint\Lin
 C:\Users\misio\RiderProjects\LinqTutorials\LinqTasks\obj\Debug\net7.0\LinqTasks.pdb
 C:\Users\misio\RiderProjects\LinqTutorials\LinqTasks\obj\Debug\net7.0\LinqTasks.genruntimeconfig.cache
 C:\Users\misio\RiderProjects\LinqTutorials\LinqTasks\obj\Debug\net7.0\ref\LinqTasks.dll
+C:\Users\misio\RiderProjects\LinqTutorials\LinqTasks\obj\Debug\net7.0\LinqTasks.sourcelink.json
