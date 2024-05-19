@@ -177,7 +177,9 @@ public static partial class Tasks
     /// </summary>
     public static int Task13(int[] arr)
     {
-        return -1;
+        return arr.GroupBy(num => num)
+            .First(group => group.Count() % 2 != 0)
+            .Key;
     }
 
     /// <summary>
@@ -186,6 +188,33 @@ public static partial class Tasks
     /// </summary>
     public static IEnumerable<Dept> Task14()
     {
-        return null;
+        return Depts.Where(dept => 
+            {
+                var count = Emps.Count(emp => emp.Deptno == dept.Deptno);
+                return count == 5 || count == 0;
+            })
+            .OrderBy(dept => dept.Dname);
+    }
+    
+    public static void PrintEmployeeCountPerDept()
+    {
+        var result = Emps.GroupBy(emp => emp.Deptno)
+            .Select(group => new
+            {
+                DeptName = Depts.FirstOrDefault(dept => dept.Deptno == group.Key)?.Dname,
+                EmployeeCount = group.Count()
+            });
+
+        foreach (var item in result)
+        {
+            if (item.DeptName == null)
+            {
+                Console.WriteLine($"Department: Unknown, Employee Count: {item.EmployeeCount}");
+            }
+            else
+            {
+                Console.WriteLine($"Department: {item.DeptName}, Employee Count: {item.EmployeeCount}");
+            }
+        }
     }
 }

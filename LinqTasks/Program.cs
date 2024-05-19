@@ -85,7 +85,17 @@ class Program
             Console.WriteLine(emp);
         }
         
+        Console.WriteLine("======= ZAD 13 =======");
+        int[] num = { 1, 1, 1, 1, 1, 1, 10, 1, 1, 1, 1 };
+        int result13 = Tasks.Task13(num);
+        Console.WriteLine(result13);
         
+        Console.WriteLine("======= ZAD 14 =======");
+        IEnumerable<Dept> result14 = Tasks.Task14();
+        foreach (Dept dept in result14)
+        {
+            Console.WriteLine(dept);
+        }
         
     }
 }
