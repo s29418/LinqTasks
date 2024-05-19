@@ -71,6 +71,14 @@ class Program
             Console.WriteLine(o);
         }
         
+        Console.WriteLine("======= ZAD 11 =======");
+        IEnumerable<object> result11 = Tasks.Task11();
+        foreach (object o in result11)
+        {
+            Console.WriteLine(o);
+        }
+        
+        
         
     }
 }

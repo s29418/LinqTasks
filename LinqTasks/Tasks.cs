@@ -123,7 +123,12 @@ public static partial class Tasks
             Hiredate = emp.HireDate
         });
 
-        var additionalObject = new[] { new { Ename = "Brak wartości", Job = (string)null, Hiredate = (DateTime?)null } };
+        var additionalObject = new[] { new
+        {
+            Ename = "Brak wartości", 
+            Job = (string)null, 
+            Hiredate = (DateTime?)null
+        } };
 
         return emps.Concat(additionalObject);
     }
@@ -141,7 +146,13 @@ public static partial class Tasks
     /// </summary>
     public static IEnumerable<object> Task11()
     {
-        return null;
+        return Emps.GroupBy(emp => emp.Deptno)
+            .Where(group => group.Count() > 1)
+            .Select(group => new 
+            {
+                name = Depts.First(dept => dept.Deptno == group.Key).Dname,
+                numOfEmployees = group.Count()
+            });
     }
 
     /// <summary>
